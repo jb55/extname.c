@@ -5,7 +5,9 @@ extname for clib
 
 ## Installation
 
-    clib install jb55/cextname
+  Install with [clib](https://github.com/clibs/clib):
+
+    $ clib install jb55/cextname
 
 ## Example
 
