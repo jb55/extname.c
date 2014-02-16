@@ -12,6 +12,10 @@ extname for clib
 ## Example
 
 ```c
+#include "extname.h"
+
+// ...
+
 char buffer[20];
 int res = extname(&buffer[0], "some/extension.ext", sizeof(buffer))
 // buffer contains ".ext"
