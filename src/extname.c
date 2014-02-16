@@ -13,6 +13,7 @@ const char *extname(const char *filename)
   if (*c++ == '/')
     filename = c;
 
-  char *loc = strrchr(filename, '.');
+  const char *slash = strrchr(filename, '/');
+  const char *loc = strrchr(slash? slash : filename, '.');
   return loc? loc : "";
 }
