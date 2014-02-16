@@ -27,4 +27,8 @@ int main()
 
   assert(strcmp(extname("/no/extension"), "") == 0);
   printf("ok %i '/no/extension' finds nothing\n", test++);
+
+  assert(strcmp(extname("./no/extension"), "") == 0);
+  printf("ok %i './no/extension' finds nothing\n", test++);
+
 }
