@@ -14,30 +14,27 @@ extname for clib
 ```c
 #include "extname.h"
 
-// ...
-
-char buffer[20];
-int res = extname(&buffer[0], "some/extension.ext", sizeof(buffer))
-// buffer contains ".ext"
-// res is 1
+strcmp(extname("some/extension.ext"), ".ext") == 0
+strcmp(extname(".derp"), ".derp") == 0
+strcmp(extname("."), ".") == 0
+strcmp(extname("nothing"), "") == 0
 ```
 
 ## API
 
-### int extname(char *dest, const char *filename, size_t num);
+### const char *extname(const char *filename);
 
 arguments
 
-  * `dest` destination buffer to hold the extension
-  * `filename` source buffer which reads the filename
-  * `num` size of the destination buffer
+  * `filename` a filename
 
 returns
 
-  * `1` match succeeded
-  * `0` no extension found
-  * `-1` buffer overflowed
+  * pointer to the part of the filename which holds the extension,
+    otherwise, a pointer to an empty string.
 
 ## License
 
   MIT
+
+
