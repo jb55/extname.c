@@ -46,4 +46,5 @@ int main()
   assert(strcmp(extname(".no/."), ".") == 0);
   printf("ok %i '.no/.' finds '.'\n", test++);
 
+  return 0;
 }
