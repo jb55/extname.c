@@ -1,4 +1,4 @@
-# cextname [![Build Status](https://secure.travis-ci.org/jb55/cextname.png?branch=master)](https://travis-ci.org/jb55/cextname)
+# extname.c [![Build Status](https://secure.travis-ci.org/jb55/extname.c.png?branch=master)](https://travis-ci.org/jb55/extname.c)
 
 extname for clib
 
@@ -6,7 +6,7 @@ extname for clib
 
   Install with [clib](https://github.com/clibs/clib):
 
-    $ clib install jb55/cextname
+    $ clib install jb55/extname.c
 
 ## Example
 
