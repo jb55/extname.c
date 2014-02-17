@@ -1,5 +1,5 @@
 
-# cextname
+# cextname [![Build Status](https://secure.travis-ci.org/jb55/cextname.png?branch=master)](https://travis-ci.org/jb55/cextname)
 
 extname for clib
 
