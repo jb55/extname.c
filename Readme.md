@@ -1,4 +1,3 @@
-
 # cextname [![Build Status](https://secure.travis-ci.org/jb55/cextname.png?branch=master)](https://travis-ci.org/jb55/cextname)
 
 extname for clib
@@ -12,7 +11,9 @@ extname for clib
 ## Example
 
 ```c
-#include "extname.h"
+// build with -Ideps
+
+#include "extname/extname.h"
 
 strcmp(extname("some/extension.ext"), ".ext") == 0
 strcmp(extname(".derp"), ".derp") == 0
