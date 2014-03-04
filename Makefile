@@ -1,12 +1,14 @@
 
+CFLAGS = -Isrc -Wall -Wextra
+
 all: build/extname.o
 
 build/%.o: src/%.c src/%.h
 	@mkdir -p build
-	$(CC) -c $< -o $@
+	$(CC) -c $< -o $@ $(CFLAGS)
 
 test/%.test: test/%.c build/extname.o
-	@$(CC) $^ -Isrc -o $@
+	@$(CC) $^ -o $@ $(CFLAGS)
 	@./$@
 
 clean:
