@@ -1,6 +1,6 @@
 {
   "name": "extname",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "repo": "jb55/extname.c",
   "description": "Get a files extension",
   "keywords": ["extname", "ext"],
